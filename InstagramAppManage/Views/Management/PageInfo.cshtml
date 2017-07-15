@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Page Info";
+}
+
+<h1>Page Info</h1>
+<div id="pageInfo">
+    <!--PAGE INFO-->
+    <div class="row">
+        <div class="col-md-1">
+            <img src=@ViewBag.InstaInfo.data.profile_picture>
+        </div>
+        <div class="col-md-8 col-md-offset-1">
+            <div class="row">
+                <h2>@ViewBag.InstaInfo.data.username</h2>
+            </div>
+            <div class="row">
+                <h4>@ViewBag.InstaInfo.data.full_name</h4>
+            </div>
+            <div class="row">
+                <h4>@ViewBag.InstaInfo.data.bio</h4>
+            </div>
+        </div>
+    </div>
+    <!--FOLLOW INFO-->
+    
+    <div class="row" style="margin-top:80px">
+        <div class="col-md-3">
+            <div class="row">
+                <h3 style="text-decoration: underline;">Follow Info</h3>
+            </div>
+            <div class="row">
+                <h4>Following: @ViewBag.InstaInfo.data.counts.follows </h4>
+            </div>
+            <div class="row">
+                <h4>Followed by: @ViewBag.InstaInfo.data.counts.followed_by </h4>
+            </div>
+            <div class="row">
+                <h4>Picture Count: @ViewBag.InstaInfo.data.counts.media </h4>
+            </div>
+            <div class="row">
+                <h4>Follow Back Rate: @ViewBag.FollowBackRate% </h4>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="row">
+                <h3 style="text-decoration: underline;">Media Info</h3>
+            </div>
+            <div class="row">
+                <h4>Total Likes: @ViewBag.totalLikes </h4>
+            </div>
+            <div class="row">
+                <h4>Total Comments: @ViewBag.totalComments </h4>
+            </div>
+            <div class="row">
+                <h4>Average Likes: @ViewBag.averageLikes </h4>
+            </div>
+            <div class="row">
+                <h4>Average Comments: @ViewBag.averageComments </h4>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
